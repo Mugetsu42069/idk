@@ -29,7 +29,7 @@ for filename in os.listdir(json_dir):
         with open(json_path, "r") as json_file:
             data = json.load(json_file)
 
-            # Serialize the JSON data to a string
+            # Serialize the JSON data
             serialized_data = json.dumps(data)
 
             # Create Avro schema dynamically based on JSON data
